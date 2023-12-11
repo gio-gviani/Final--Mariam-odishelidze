@@ -111,28 +111,53 @@ a {
   box-sizing: border-box;
 }
 
-head {
-  max-height: 135px;
-  height: 100%;
+header {
+  max-height: 136px;
+  max-width: 100%;
 }
-head .container {
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header .container .n1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  max-width: 78px;
+  width: 100%;
+  max-height: 63px;
+  height: 100%;
+  flex-shrink: 0;
+}
+header .container .n2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-head .container ul li .fa-solid fa-guitar {
-  max-width: 108px;
-  width: 100%;
-  max-height: 101px;
-  height: 100%;
+header .container ul li .fa-guitar {
+  size: 100px;
+  color: #260606;
 }
-head .container ul li input[type=text] {
+header .container ul li a {
+  font-family: "Roboto", sans-serif;
+  color: rgb(19, 19, 94);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header .container ul li input[type=text] {
+  max-width: 188px;
   width: 100%;
+  max-height: 21px;
+  height: 100%;
   box-sizing: border-box;
   border: 2px solid #ccc;
-  border-radius: 4px;
+  border-radius: 16px;
   font-size: 16px;
-  background-color: white;
+  background: rgba(217, 217, 217, 0.5);
   background-image: url("searchicon.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
