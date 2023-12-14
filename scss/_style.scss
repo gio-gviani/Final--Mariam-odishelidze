@@ -1,172 +1,155 @@
-header{
-   max-width: 100%;
-   background-color:#967979;
-    
-      .container2{
-         height: 72px;
+header {
+    max-width: 100%;
+    background-color: #967979;
+
+    .container2 {
+        height: 72px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: nowrap;
-        background-color:#967979 ;
-       .n1{
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: nowrap;
-          max-width: 600px;
-          width: 100%;
-          max-height: 63px;
-          height: 100%;
-          flex-shrink: 0; ;
-       }
-      
-      
-      
+        background-color: #967979;
+        .n1 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            max-width: 600px;
+            width: 100%;
+            max-height: 63px;
+            height: 100%;
+            flex-shrink: 0;
+        }
+    }
 
-         } 
-      
-       
-        
-          ul{
-              
-              display: flex;
-              justify-content: space-between;
-             align-items: center;
-             flex-wrap: nowrap;
-             max-width: 600px;
-             width: 100%;
-              li{
-                 
-               a{font-family: 'Roboto', sans-serif;
-                  color: rgb(251, 251, 252);
-                  font-size: 20px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
-              }
-
-              .a:hover{
-               color: rgb(219, 209, 209);
-               transition: all none linear 250ms;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 600px;
+        width: 100%;
+        li {
+            a {
+                font-family: "Roboto", sans-serif;
+                color: rgb(251, 251, 252);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                transition: 1s;
+                &:hover {
+                    color: rgb(219, 209, 209);
+                }
             }
-            
-           }
-            
-             
-              }
-          }
+        }
+    }
+}
 
-          .container1{
-            
-           height: 136px;
-            background-color:#A18686;
-             display: flex;
-             justify-content: space-evenly;
-             align-items: center;
-         
+.container1 {
+    height: 136px;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    ul {
+        li {
+            h1 {
+                color: var(--Secondary-1, #faf9f8);
+                font-family: "Pacifico", cursive;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 40px; /* 100% */
+            }
 
-          
+            ::placeholder {
+                font-family: "Roboto", sans-serif;
+                color: var(--Primary-7, #b6a1a1);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400px;
+                height: 40px;
+            }
 
-             ul{
+            input[type="text"] {
+                padding: 7px 10px;
+                max-width: 600px;
+                width: 100%;
+                max-height: 40px;
+                height: 100%;
+                box-sizing: border-box;
+                border: 2px solid #fcf9f9;
+                border-radius: 8px;
+                font-size: 30px;
+                background: rgba(255, 255, 255, 0.5);
+                background-color: #fcf9f9;
+                background-image: url("searchicon.png");
+                background-repeat: no-repeat;
+                &:hover {
+                    background-color: lightcoral;
+                }
+            }
 
-            li{
-               h1{color: var(--Secondary-1, #FAF9F8);
-               font-family: 'Pacifico', cursive;
-               font-size: 60px;
-               font-style: normal;
-               font-weight: 400;
-               line-height: 40px; /* 100% */}
+            #text:hover {
+                color: rgb(219, 209, 209);
+                transition: all none linear 250ms;
+            }
 
-            ::placeholder{
-               font-family: 'Roboto', sans-serif;
-            color: var(--Primary-7, #B6A1A1);
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400px;
-            height: 40px;
-                        }
-                        
-                input[type=text] {
-                 max-width: 600px;
-                 width: 100%;
-                  max-height: 40px;
-                  height: 100%;
-                   box-sizing: border-box;
-                    border: 2px solid #fcf9f9;
-                    border-radius: 8px;
-                    font-size: 30px;
-                    background: rgba(255, 255, 255, 0.5);
-                    background-color: #fcf9f9;
-                    background-image: url('searchicon.png');
-                    background-repeat: no-repeat;
-                   
-                
-          }
+            .fa-magnifying-glass {
+                font-size: 30px;
+                color: #dec2c2;
+                margin-left: 9px;
+            }
 
-          id#text:hover{
-            color: rgb(219, 209, 209);
-            transition: all none linear 250ms;
-          }
+            .fa-magnifying-glass:hover {
+                color: rgb(255, 255, 255);
+                transition: all none linear 250ms;
+            }
 
-          .fa-magnifying-glass{
-            font-size: 30px;
-            color: #dec2c2;
-            margin-left: 9px;
-          }
+            .fa-house {
+                font-size: 30px;
+                color: #fefbfb;
+            }
 
-          .fa-magnifying-glass:hover{
-            color: rgb(255, 255, 255);
-            transition: all none linear 250ms;
-          }
+            .fa-house:hover {
+                color: rgb(219, 209, 209);
+                transition: all none linear 250ms;
+            }
 
-          .fa-house{
-            font-size: 30px;
-            color: #fefbfb;
-          }
+            .fa-music {
+                font-size: 30px;
+                color: #fefbfb;
+                margin-left: 16px;
+                margin-right: 16px;
+            }
 
-          .fa-house:hover{
-            color: rgb(219, 209, 209);
-            transition: all none linear 250ms;
-          }
+            .fa-music:hover {
+                color: rgb(219, 209, 209);
+                transition: all none linear 250ms;
+            }
 
+            .fa-guitar {
+                font-size: 40px;
+                color: #fcf8fc;
+            }
 
-          .fa-music{
-            font-size: 30px;
-            color: #fefbfb;
-            margin-left: 16px;
-            margin-right: 16px;
-          }
+            .fa-guitar:hover {
+                color: rgb(219, 209, 209);
+                transition: all none linear 250ms;
+            }
 
-          .fa-music:hover{
-            color: rgb(219, 209, 209);
-            transition: all none linear 250ms;
-          }
+            h1:hover {
+                color: rgb(219, 209, 209);
+                transition: all none linear 250ms;
+            }
 
-
-          .fa-guitar{
-            font-size: 40px;
-            color: #fcf8fc;
-          
-        
-         }
-
-         .fa-guitar:hover{
-            color: rgb(219, 209, 209);
-            transition: all none linear 250ms;
-          }
-
-      h1:hover{
-         color: rgb(219, 209, 209);
-         transition: all none linear 250ms;
-      }
-
-      a:hover{
-         color: rgb(219, 209, 209);
-         transition: all none linear 250ms;
-         }
-      }
- 
-    
-   }
+            a:hover {
+                color: rgb(219, 209, 209);
+                transition: all none linear 250ms;
+            }
+        }
+    }
 }

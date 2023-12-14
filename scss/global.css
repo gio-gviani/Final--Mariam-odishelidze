@@ -17,7 +17,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -64,7 +65,16 @@ meter {
 }
 
 /* reset default text opacity of input placeholder */
+::-webkit-input-placeholder {
+  color: unset;
+}
 ::-moz-placeholder {
+  color: unset;
+}
+:-ms-input-placeholder {
+  color: unset;
+}
+::-ms-input-placeholder {
   color: unset;
 }
 ::placeholder {
@@ -108,7 +118,8 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header {
@@ -117,27 +128,46 @@ header {
 }
 header .container2 {
   height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   background-color: #967979;
 }
 header .container2 .n1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   max-width: 600px;
   width: 100%;
   max-height: 63px;
   height: 100%;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   max-width: 600px;
   width: 100%;
 }
@@ -148,30 +178,63 @@ header ul li a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
-header ul li .a:hover {
+header ul li a:hover {
   color: rgb(219, 209, 209);
-  transition: all none linear 250ms;
 }
 
 .container1 {
   height: 136px;
-  background-color: #A18686;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .container1 ul li h1 {
-  color: var(--Secondary-1, #FAF9F8);
+  color: var(--Secondary-1, #faf9f8);
   font-family: "Pacifico", cursive;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px; /* 100% */
 }
+.container1 ul li ::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: var(--Primary-7, #b6a1a1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400px;
+  height: 40px;
+}
 .container1 ul li ::-moz-placeholder {
   font-family: "Roboto", sans-serif;
-  color: var(--Primary-7, #B6A1A1);
+  color: var(--Primary-7, #b6a1a1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400px;
+  height: 40px;
+}
+.container1 ul li :-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: var(--Primary-7, #b6a1a1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400px;
+  height: 40px;
+}
+.container1 ul li ::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: var(--Primary-7, #b6a1a1);
   font-size: 16px;
   font-style: normal;
   font-weight: 400px;
@@ -179,18 +242,20 @@ header ul li .a:hover {
 }
 .container1 ul li ::placeholder {
   font-family: "Roboto", sans-serif;
-  color: var(--Primary-7, #B6A1A1);
+  color: var(--Primary-7, #b6a1a1);
   font-size: 16px;
   font-style: normal;
   font-weight: 400px;
   height: 40px;
 }
 .container1 ul li input[type=text] {
+  padding: 7px 10px;
   max-width: 600px;
   width: 100%;
   max-height: 40px;
   height: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px solid #fcf9f9;
   border-radius: 8px;
   font-size: 30px;
@@ -199,8 +264,12 @@ header ul li .a:hover {
   background-image: url("searchicon.png");
   background-repeat: no-repeat;
 }
-.container1 ul li id#text:hover {
+.container1 ul li input[type=text]:hover {
+  background-color: lightcoral;
+}
+.container1 ul li #text:hover {
   color: rgb(219, 209, 209);
+  -webkit-transition: all none linear 250ms;
   transition: all none linear 250ms;
 }
 .container1 ul li .fa-magnifying-glass {
@@ -210,6 +279,7 @@ header ul li .a:hover {
 }
 .container1 ul li .fa-magnifying-glass:hover {
   color: rgb(255, 255, 255);
+  -webkit-transition: all none linear 250ms;
   transition: all none linear 250ms;
 }
 .container1 ul li .fa-house {
@@ -218,6 +288,7 @@ header ul li .a:hover {
 }
 .container1 ul li .fa-house:hover {
   color: rgb(219, 209, 209);
+  -webkit-transition: all none linear 250ms;
   transition: all none linear 250ms;
 }
 .container1 ul li .fa-music {
@@ -228,6 +299,7 @@ header ul li .a:hover {
 }
 .container1 ul li .fa-music:hover {
   color: rgb(219, 209, 209);
+  -webkit-transition: all none linear 250ms;
   transition: all none linear 250ms;
 }
 .container1 ul li .fa-guitar {
@@ -236,13 +308,16 @@ header ul li .a:hover {
 }
 .container1 ul li .fa-guitar:hover {
   color: rgb(219, 209, 209);
+  -webkit-transition: all none linear 250ms;
   transition: all none linear 250ms;
 }
 .container1 ul li h1:hover {
   color: rgb(219, 209, 209);
+  -webkit-transition: all none linear 250ms;
   transition: all none linear 250ms;
 }
 .container1 ul li a:hover {
   color: rgb(219, 209, 209);
+  -webkit-transition: all none linear 250ms;
   transition: all none linear 250ms;
 }/*# sourceMappingURL=global.css.map */
