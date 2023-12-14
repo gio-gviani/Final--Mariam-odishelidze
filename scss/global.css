@@ -112,54 +112,137 @@ a {
 }
 
 header {
-  max-height: 136px;
   max-width: 100%;
+  background-color: #967979;
 }
-header .container {
+header .container2 {
+  height: 72px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
+  background-color: #967979;
 }
-header .container .n1 {
+header .container2 .n1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  max-width: 78px;
+  max-width: 600px;
   width: 100%;
   max-height: 63px;
   height: 100%;
   flex-shrink: 0;
 }
-header .container .n2 {
+header ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: nowrap;
+  max-width: 600px;
+  width: 100%;
 }
-header .container ul li .fa-guitar {
-  size: 100px;
-  color: #260606;
-}
-header .container ul li a {
+header ul li a {
   font-family: "Roboto", sans-serif;
-  color: rgb(19, 19, 94);
+  color: rgb(251, 251, 252);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-header .container ul li input[type=text] {
-  max-width: 188px;
+header ul li .a:hover {
+  color: rgb(219, 209, 209);
+  transition: all none linear 250ms;
+}
+
+.container1 {
+  height: 136px;
+  background-color: #A18686;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container1 ul li h1 {
+  color: var(--Secondary-1, #FAF9F8);
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+}
+.container1 ul li ::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: var(--Primary-7, #B6A1A1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400px;
+  height: 40px;
+}
+.container1 ul li ::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: var(--Primary-7, #B6A1A1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400px;
+  height: 40px;
+}
+.container1 ul li input[type=text] {
+  max-width: 600px;
   width: 100%;
-  max-height: 21px;
+  max-height: 40px;
   height: 100%;
   box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 16px;
-  font-size: 16px;
-  background: rgba(217, 217, 217, 0.5);
+  border: 2px solid #fcf9f9;
+  border-radius: 8px;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  background-color: #fcf9f9;
   background-image: url("searchicon.png");
-  background-position: 10px 10px;
   background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
+}
+.container1 ul li id#text:hover {
+  color: rgb(219, 209, 209);
+  transition: all none linear 250ms;
+}
+.container1 ul li .fa-magnifying-glass {
+  font-size: 30px;
+  color: #dec2c2;
+  margin-left: 9px;
+}
+.container1 ul li .fa-magnifying-glass:hover {
+  color: rgb(255, 255, 255);
+  transition: all none linear 250ms;
+}
+.container1 ul li .fa-house {
+  font-size: 30px;
+  color: #fefbfb;
+}
+.container1 ul li .fa-house:hover {
+  color: rgb(219, 209, 209);
+  transition: all none linear 250ms;
+}
+.container1 ul li .fa-music {
+  font-size: 30px;
+  color: #fefbfb;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.container1 ul li .fa-music:hover {
+  color: rgb(219, 209, 209);
+  transition: all none linear 250ms;
+}
+.container1 ul li .fa-guitar {
+  font-size: 40px;
+  color: #fcf8fc;
+}
+.container1 ul li .fa-guitar:hover {
+  color: rgb(219, 209, 209);
+  transition: all none linear 250ms;
+}
+.container1 ul li h1:hover {
+  color: rgb(219, 209, 209);
+  transition: all none linear 250ms;
+}
+.container1 ul li a:hover {
+  color: rgb(219, 209, 209);
+  transition: all none linear 250ms;
 }/*# sourceMappingURL=global.css.map */
