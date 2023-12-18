@@ -17,8 +17,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -65,16 +64,7 @@ meter {
 }
 
 /* reset default text opacity of input placeholder */
-::-webkit-input-placeholder {
-  color: unset;
-}
 ::-moz-placeholder {
-  color: unset;
-}
-:-ms-input-placeholder {
-  color: unset;
-}
-::-ms-input-placeholder {
   color: unset;
 }
 ::placeholder {
@@ -118,8 +108,7 @@ a {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
@@ -128,58 +117,38 @@ header {
 }
 header .container2 {
   height: 72px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  background-color: #967979;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #a18686;
 }
 header .container2 .n1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   max-width: 600px;
   width: 100%;
   max-height: 63px;
   height: 100%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   max-width: 600px;
   width: 100%;
 }
 header ul li a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Courgette", cursive;
   color: rgb(251, 251, 252);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  -webkit-transition: 1s;
-  transition: 1s;
+  transition: 500ms;
 }
 header ul li a:hover {
   color: rgb(219, 209, 209);
@@ -190,15 +159,9 @@ header ul li a:hover {
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .container1 ul li h1 {
   color: var(--Secondary-1, #faf9f8);
@@ -207,32 +170,12 @@ header ul li a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 40px; /* 100% */
+  transition: 500ms;
 }
-.container1 ul li ::-webkit-input-placeholder {
-  font-family: "Roboto", sans-serif;
-  color: var(--Primary-7, #b6a1a1);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400px;
-  height: 40px;
+.container1 ul li h1:hover {
+  color: rgb(219, 209, 209);
 }
 .container1 ul li ::-moz-placeholder {
-  font-family: "Roboto", sans-serif;
-  color: var(--Primary-7, #b6a1a1);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400px;
-  height: 40px;
-}
-.container1 ul li :-ms-input-placeholder {
-  font-family: "Roboto", sans-serif;
-  color: var(--Primary-7, #b6a1a1);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400px;
-  height: 40px;
-}
-.container1 ul li ::-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   color: var(--Primary-7, #b6a1a1);
   font-size: 16px;
@@ -249,13 +192,13 @@ header ul li a:hover {
   height: 40px;
 }
 .container1 ul li input[type=text] {
-  padding: 7px 10px;
+  padding-left: 5px;
+  padding-bottom: 9px;
   max-width: 600px;
   width: 100%;
   max-height: 40px;
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 2px solid #fcf9f9;
   border-radius: 8px;
   font-size: 30px;
@@ -263,61 +206,77 @@ header ul li a:hover {
   background-color: #fcf9f9;
   background-image: url("searchicon.png");
   background-repeat: no-repeat;
+  transition: 500ms;
 }
-.container1 ul li input[type=text]:hover {
-  background-color: lightcoral;
-}
-.container1 ul li #text:hover {
-  color: rgb(219, 209, 209);
-  -webkit-transition: all none linear 250ms;
-  transition: all none linear 250ms;
+.container1 ul li input[type=text]:focus {
+  background-color: rgb(219, 209, 209);
 }
 .container1 ul li .fa-magnifying-glass {
   font-size: 30px;
   color: #dec2c2;
   margin-left: 9px;
+  transition: 500ms;
 }
 .container1 ul li .fa-magnifying-glass:hover {
   color: rgb(255, 255, 255);
-  -webkit-transition: all none linear 250ms;
-  transition: all none linear 250ms;
 }
 .container1 ul li .fa-house {
   font-size: 30px;
   color: #fefbfb;
+  transition: 500ms;
 }
 .container1 ul li .fa-house:hover {
   color: rgb(219, 209, 209);
-  -webkit-transition: all none linear 250ms;
-  transition: all none linear 250ms;
 }
 .container1 ul li .fa-music {
   font-size: 30px;
   color: #fefbfb;
   margin-left: 16px;
   margin-right: 16px;
+  transition: 500ms;
 }
 .container1 ul li .fa-music:hover {
   color: rgb(219, 209, 209);
-  -webkit-transition: all none linear 250ms;
-  transition: all none linear 250ms;
 }
 .container1 ul li .fa-guitar {
   font-size: 40px;
   color: #fcf8fc;
+  transition: 500ms;
 }
 .container1 ul li .fa-guitar:hover {
   color: rgb(219, 209, 209);
-  -webkit-transition: all none linear 250ms;
-  transition: all none linear 250ms;
 }
-.container1 ul li h1:hover {
-  color: rgb(219, 209, 209);
-  -webkit-transition: all none linear 250ms;
-  transition: all none linear 250ms;
+
+section .con3 .item {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
-.container1 ul li a:hover {
-  color: rgb(219, 209, 209);
-  -webkit-transition: all none linear 250ms;
-  transition: all none linear 250ms;
+section .container00 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  vertical-align: center;
+}
+section .container00 .card {
+  max-width: 400px;
+  width: 100%;
+  max-height: 2000px;
+  height: 100%;
+  border-radius: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  background-color: #967979;
+}
+section .container00 .card .img {
+  background-image: url(/images/b3.jpg);
+  background-color: #967979;
+  border-radius: 8% 8% 0% 0%;
+}
+section .container00 .card .n {
+  font-family: "Dancing Script", cursive;
+  font-size: 55px;
+  color: rgb(252, 234, 234);
+  font-weight: 50px;
 }/*# sourceMappingURL=global.css.map */
