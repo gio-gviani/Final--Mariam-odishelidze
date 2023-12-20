@@ -167,68 +167,73 @@ section {
       flex-direction: column;
       align-items: center;
       box-shadow: 10px 5px 5px #d8bebe;
-
       background-color: #967979;
-      .img {
-        background-image: url(/images/b3.jpg);
-        background-color: #967979;
-        border-radius: 8% 8% 0% 0%;
-      }
-      .n {
-        font-family: "Dancing Script", cursive;
-        font-size: 55px;
-        color: rgb(252, 234, 234);
-        font-weight: 50px;
-      }
+      transition: 500ms;
+      background-color: #3e3c3c;
+    }
+    .img {
+      background-image: url(/images/b3.jpg);
+      background-color: #967979;
+      border-radius: 8% 8% 0% 0%;
+    }
+    .n {
+      font-family: "Dancing Script", cursive;
+      font-size: 55px;
+      color: rgb(252, 234, 234);
+      font-weight: 50px;
+    }
 
-      .np {
-        font-family: "Dancing Script", cursive;
-        font-size: 30px;
-        color: rgb(252, 234, 234);
-        font-weight: 20px;
-        vertical-align: center;
-      }
+    .np {
+      font-family: "Dancing Script", cursive;
+      font-size: 30px;
+      color: rgb(252, 234, 234);
+      font-weight: 20px;
+      vertical-align: center;
     }
   }
+}
 
-  .ddng {
+.ddng {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+  .xsh {
+    background-image: url("/images/xx.jpg");
+    background-color: #dec2c2;
+    height: 500px;
+    width: 1240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 6%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 60px;
-    .xsh {
-      background-image: url("/images/xx.jpg");
-      background-color: #dec2c2;
-      height: 500px;
-      width: 1240px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      border-radius: 6%;
+    flex-direction: column;
+    background-blend-mode: overlay;
+    #myBtn {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      flex-direction: column;
-      background-blend-mode: overlay;
-      #myBtn {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 50px;
-        width: 190px;
-        font-family: "Roboto", sans-serif;
-        font-size: 25px;
-        color: rgb(255, 255, 255);
-        background-color: #3f2d2d;
-        border-radius: 15px;
-        box-shadow: #7e6a6a 10px 3px 3px;
+      height: 50px;
+      width: 190px;
+      font-family: "Roboto", sans-serif;
+      font-size: 25px;
+      color: rgb(255, 255, 255);
+      background-color: #3f2d2d;
+      border-radius: 15px;
+      box-shadow: #7e6a6a 10px 3px 3px;
+      transition: 500ms;
+      &:hover {
+        background-color: white;
       }
-      p {
-        font-size: 20px;
-        color: #000000;
-        font-family: "Archivo", sans-serif;
-      }
+    }
+    p {
+      font-size: 20px;
+      color: #000000;
+      font-family: "Archivo", sans-serif;
     }
   }
 }
@@ -259,6 +264,7 @@ section {
     line-height: 16px; /* 100% */
   }
 }
+
 .container11 {
   max-height: 424px;
   height: 100%;
